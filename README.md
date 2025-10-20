@@ -35,7 +35,7 @@ Collects papers on autonomous driving E2E learning and VLM/VLA, with organized r
     <img 
       src="images/coggle.png" 
       alt="GE2EAD Mindmap Logo" 
-      style="width: 100%; height: auto; max-width: 800px;" 
+      style="width: 100%; height: auto; max-width: 1500px;" 
     >
   </a>
   <h3 align="center">GE2EAD Mindmap</h3>
@@ -46,7 +46,7 @@ Collects papers on autonomous driving E2E learning and VLM/VLA, with organized r
     <img 
       src="images/top_methods.png" 
       alt="GE2EAD Mindmap Logo" 
-      style="width: 100%; height: auto; max-width: 800px;" 
+      style="width: 100%; height: auto; max-width: 1500px;" 
     >
   </a>
   <h3 align="center">Top Methods</h3>
@@ -54,6 +54,9 @@ Collects papers on autonomous driving E2E learning and VLM/VLA, with organized r
 
 ## Papers
 ### Conventional End-to-End Methods
+<details open>
+<summary> Conventional End-to-End Methods </summary>
+
 <details open>
 <summary>2025</summary>
 
@@ -376,8 +379,13 @@ Collects papers on autonomous driving E2E learning and VLM/VLA, with organized r
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>    
+</details>
+
 
 ### VLM-Centric End-to-End Methods
+<details open>
+<summary>VLM-Centric End-to-End Methods</summary>
+
 <details open>
 <summary>2025</summary>
 
@@ -804,8 +812,12 @@ Collects papers on autonomous driving E2E learning and VLM/VLA, with organized r
 </details>
 
 <p align="right">(<a href="#top">back to top</a>)</p> 
+</details>
 
 ### Hybrid End-to-End Methods
+<details open>
+<summary> Hybrid End-to-End Methods </summary>
+
 <details open>
 <summary>2025</summary>
 
@@ -894,9 +906,12 @@ Collects papers on autonomous driving E2E learning and VLM/VLA, with organized r
 
 </details>
 <p align="right">(<a href="#top">back to top</a>)</p> 
-
+</details>
 
 ## Dataset
+<details open>
+<summary>Dataset</summary>
+
 ### Normal Dataset
 <details open>
 <summary>Normal Dataset</summary>
@@ -1146,10 +1161,12 @@ Collects papers on autonomous driving E2E learning and VLM/VLA, with organized r
 
 <p align="right">(<a href="#top">back to top</a>)</p>   
 
+</details>
+
 ## License
 
 
-
+The GE2EAD resources is released under the Apache 2.0 license.
 <p align="right">(<a href="#top">back to top</a>)</p>    
 
 
