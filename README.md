@@ -11,7 +11,9 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-Collects papers on autonomous driving E2E learning and VLM/VLA, with organized research branches and trends in these fields.
+This repo. collects and organizes key papers in general end-to-end autonomous driving, classifying them into conventional (e.g. UniAD), VLM-centric (e.g. DriveLM), and hybrid (e.g.Senna) approaches. Our analysis further outlines the primary research branches and trends shaping the field.
+
+
 
 
 ## Table of Contents
