@@ -1183,7 +1183,15 @@ The GE2EAD resources is released under the Apache 2.0 license.
 ## Citation
 If you find this project useful in your research, please consider citing:
 ```BibTeX
-
+@article{yang2025survey,
+  title={Survey of General End-to-End Autonomous Driving: A Unified Perspective},
+  author={Yang, Yixiang and Han, Chuanrong and Mao, Runhao and others},
+  journal={TechRxiv},
+  year={2025},
+  month={December},
+  doi={10.36227/techrxiv.176523315.56439138/v1},
+  url={https://doi.org/10.36227/techrxiv.176523315.56439138/v1}
+}
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>    
