@@ -11,11 +11,16 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-This repo. collects and organizes key papers in general end-to-end autonomous driving, classifying them into conventional (e.g. UniAD), VLM-centric (e.g. DriveLM), and hybrid (e.g.Senna) approaches. Our analysis further outlines the primary research branches and trends shaping the field.
+This is the official repository for the paper **"Survey of General End-to-End Autonomous Driving: A Unified Perspective"** ([paper link](https://doi.org/10.36227/techrxiv.176523315.56439138/v1)).  
+It collects and organizes key papers in General End-to-End Autonomous Driving, classifying them into **Conventional** (e.g., UniAD), **VLM-centric** (e.g., DriveLM), and **Hybrid** (e.g., Senna) approaches.  
+In addition, this repository curates both **Normal** and **Vision-Language** datasets relevant to General End-to-End Autonomous Driving.  
+Based on this taxonomy and dataset collection, our analysis further outlines the main research branches and emerging trends that are shaping the field.
 
 ## 📌 Milestones
 
 - 🚀 **2025-12-13**: Added the latest newly published papers to the survey repository and updated the overall organization.
+
+- 🚀 **2025-12-10**: The paper *“Survey of General End-to-End Autonomous Driving: A Unified Perspective”* was released, and this repository was made publicly available.
 
 
 
