@@ -13,6 +13,10 @@
 
 This repo. collects and organizes key papers in general end-to-end autonomous driving, classifying them into conventional (e.g. UniAD), VLM-centric (e.g. DriveLM), and hybrid (e.g.Senna) approaches. Our analysis further outlines the primary research branches and trends shaping the field.
 
+## 📌 Milestones
+
+- 🚀 **2025-12-13**: Added the latest newly published papers to the survey repository and updated the overall organization.
+
 
 
 
@@ -62,6 +66,53 @@ This repo. collects and organizes key papers in general end-to-end autonomous dr
 
 <details open>
 <summary>2025</summary>
+
+- **DiffusionDriveV2**: DiffusionDriveV2: Reinforcement Learning-Constrained Truncated Diffusion Modeling in End-to-End Autonomous Driving [[Paper](https://www.arxiv.org/pdf/2512.07745)] [[Code](https://github.com/hustvl/DiffusionDriveV2)]
+  
+  Summary: DiffusionDriveV2 enhances diffusion-based trajectory planning by combining truncated diffusion modeling with reinforcement learning. It uses scale-adaptive multiplicative noise to promote broad exploration, and designs intra-anchor GRPO to optimize samples within the same intention anchor plus inter-anchor truncated GRPO to compare advantages across anchors in a controlled way, suppressing low-quality modes while preserving multimodal, intention-diverse trajectories.
+
+- **SIMSCALE**: SimScale: Learning to Drive via Real-World Simulation at Scale [[Paper](https://www.arxiv.org/pdf/2511.23369)] [[Code](https://github.com/OpenDriveLab/SimScale)]
+  
+  Summary: SimScale is a scalable real-world–conditioned simulation framework that augments driving logs with massive, diverse, safety-critical scenarios. It uses neural rendering with a reactive environment to generate multi-view observations along perturbed ego trajectories, then synthesizes pseudo-expert trajectories for those new states; policies are cotrained on both real and simulated data, yielding improved robustness and generalization that scale with simulation data volume.
+
+- **LAP**: LAP: Fast Latent Diffusion Planner with Fine-Grained Feature Distillation for Autonomous Driving [[Paper](https://arxiv.org/pdf/2512.00470)] [[Code](https://github.com/jhz1192/Latent-Planner)]
+  
+  Summary: LAP is a latent-space diffusion planner that decouples high-level driving intents from low-level kinematics using a VAE-learned latent representation. Trajectories are generated via diffusion in this latent space, while a fine-grained feature distillation mechanism tightly fuses the latent planner with vectorized scene context, enabling high-quality, multimodal plans in as few as a single denoising step and significantly reducing inference latency.
+
+
+- **GuideFlow**: GuideFlow: Constraint-Guided Flow Matching for Planning in End-to-End Autonomous Driving [[Paper](https://arxiv.org/pdf/2511.18729)] [[Code](https://github.com/liulin815/GuideFlow)]
+  
+  Summary: GuideFlow is a generative planner that uses constrained flow matching to generate diverse yet constraint-satisfying trajectories. It explicitly models the flow matching process, jointly trains with an Energy-Based Model to enforce physical and safety constraints during generation, and parameterizes driving aggressiveness as a control signal to modulate trajectory style.
+
+- **DiffRefiner**: DiffRefiner: Coarse to Fine Trajectory Planning via Diffusion Refinement with Semantic Interaction for End to End Autonomous Driving [[Paper](https://arxiv.org/pdf/2511.17150)] [[Code](https://github.com/nullmax-vision/DiffRefiner)]
+  
+  Summary: DiffRefiner adopts a two-stage coarse-to-fine trajectory planning framework where a transformer-based proposal decoder first regresses coarse trajectories from sensor inputs using predefined anchors, and a diffusion refiner then iteratively denoises and refines these proposals. A fine-grained denoising decoder with semantic interaction improves scene compliance, yielding more accurate and environment-aligned trajectories.
+
+- **ResAD**: ResAD: Normalized Residual Trajectory Modeling for End-to-End Autonomous Driving [[Paper](https://arxiv.org/pdf/2510.08562)] [[Code](https://github.com/Duckyee728/ResAD-released)]
+  
+  Summary: ResAD reframes end-to-end trajectory prediction as normalized residual modeling around a deterministic inertial reference path. The model predicts deviations from this inertial prior instead of absolute trajectories and applies point-wise normalization to reweight residuals across time, reducing the dominance of uncertain long-horizon errors and focusing learning on necessary, context-driven corrections that improve near-term safety.
+
+
+- **SeerDrive**: Future-Aware End-to-End Driving: Bidirectional Modeling of Trajectory Planning and Scene Evolution, **NeurIPS 2025** [[Paper](https://arxiv.org/pdf/2510.11092)] [[Code](https://github.com/LogosRoboticsGroup/SeerDrive)]
+  
+  Summary: SeerDrive jointly models future scene evolution and trajectory planning in a closed-loop manner. It first predicts future BEV representations to anticipate scene dynamics, then injects these future-aware features into the trajectory planner, and iteratively refines both future scene prediction and trajectory generation through collaborative optimization.
+
+- **DriveDPO**: DriveDPO: Policy Learning via Safety DPO For End-to-End Autonomous Driving [[Paper](https://arxiv.org/pdf/2509.17940)]
+  
+  Summary: DriveDPO learns an end-to-end driving policy by directly aligning it with safety-aware preferences instead of pure imitation. It first distills a unified policy distribution that combines human imitation similarity and rule-based safety scores, then performs iterative Direct Preference Optimization at the trajectory level to align the policy with safer driving behaviors.
+
+- **AnchDrive**: AnchDrive: Bootstrapping Diffusion Policies with Hybrid Trajectory Anchors for End-to-End Driving [[Paper](https://arxiv.org/pdf/2509.20253)]
+  
+  Summary: AnchDrive accelerates diffusion-based planners by bootstrapping from hybrid trajectory anchors instead of pure noise. It constructs anchors from a static vocabulary of general driving priors and dynamic context-aware trajectories decoded from dense and sparse perception features, then uses a diffusion model to predict offset distributions that refine these anchors into diverse, high-quality trajectories.
+
+- **AdaThinkDrive**: AdaThinkDrive: Adaptive Thinking via Reinforcement Learning for Autonomous Driving [[Paper](https://arxiv.org/pdf/2509.13769)]
+  
+  Summary: AdaThinkDrive is an end-to-end framework with a dual-mode “fast/slow thinking” mechanism that adaptively decides whether to use Chain-of-Thought reasoning. The model is pretrained on QA and trajectory data to acquire driving knowledge, then supervised with mixed fast-answering and CoT-style slow-thinking data, and finally optimized with an Adaptive Think Reward and GRPO to learn when CoT reasoning improves trajectory quality versus when it is unnecessary.
+
+
+- **VeteranAD**: Perception in Plan: Coupled Perception and Planning for End-to-End Autonomous Driving [[Paper](https://arxiv.org/pdf/2508.11488)] [[Code](https://github.com/LogosRoboticsGroup/VeteranAD)]
+  
+  Summary: The method proposes a “perception-in-plan” framework that tightly couples perception with planning by using multi-mode anchored trajectories as planning priors. The perception module is guided to collect traffic elements specifically along these priors, and an autoregressive planner progressively predicts future trajectories while repeatedly focusing perception on the most relevant regions, leading to targeted, planning-driven perception and trajectory generation.
 
 * ​**EvaDrive**​: Evolutionary Adversarial Policy Optimization for End-to-End Autonomous Driving [[Paper](https://www.arxiv.org/pdf/2508.09158)] 
     
@@ -392,6 +443,49 @@ This repo. collects and organizes key papers in general end-to-end autonomous dr
 
 <details open>
 <summary>2025</summary>
+
+- **CoT4AD**: CoT4AD: A Vision-Language-Action Model with Explicit Chain-of-Thought Reasoning for Autonomous Driving [[Paper](https://www.arxiv.org/pdf/2511.22532)]
+  
+  Summary: CoT4AD is a VLA framework that injects explicit Chain-of-Thought reasoning into autonomous driving. It takes visual observations and language instructions, then models an explicit perception–question–prediction–action CoT during training to align the reasoning trajectory with the action space across multiple tasks; at inference, it performs implicit CoT reasoning to improve numerical reasoning, causal understanding, and trajectory planning in complex scenes.
+
+- **Model-Based Policy Adaptation (MPA)**: Model-Based Policy Adaptation for Closed-Loop End-to-End Autonomous Driving, **NeurIPS 2025** [[Paper](https://arxiv.org/pdf/2511.21584)] [[Project](https://mpa-drive.github.io/)]
+  
+  Summary: MPA is a model-based adaptation framework that improves pretrained end-to-end policies at deployment time. It first uses a geometry-consistent simulation engine to generate diverse counterfactual trajectories, then trains a diffusion-based policy adapter to refine the base policy and a multi-step Q-value model to evaluate long-term outcomes; at inference, the adapter proposes multiple trajectory candidates and the Q model selects the one with highest expected utility for safer, more robust closed-loop behavior.
+
+- **AD-R1**: AD-R1: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving with Impartial World Models [[Paper](https://www.arxiv.org/pdf/2511.20325)]
+  
+  Summary: AD-R1 introduces an Impartial World Model and a closed-loop RL refinement framework to overcome optimistic bias in world-model-based driving agents. It uses Counterfactual Synthesis to generate plausible failure cases (collisions, off-road events) so the world model learns to “imagine danger” faithfully, then employs this world model as an internal critic that is queried to predict outcomes of candidate actions, enabling policy refinement that explicitly minimizes safety violations in challenging scenarios.
+
+
+- **Alpamayo-R1 (AR1)**: Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail [[Paper](https://arxiv.org/pdf/2511.00088)] [[Code](https://github.com/NVlabs/alpamayo)]
+  
+  Summary: Alpamayo-R1 is a VLA framework that couples causal reasoning with trajectory planning using a modular architecture. It uses Cosmos-Reason, a vision–language model pretrained for physical reasoning, to generate Chain-of-Causation traces aligned with driving decisions, and a diffusion-based trajectory decoder to produce feasible plans; a multi-stage training pipeline with supervised fine-tuning and RL further aligns reasoning quality and action consistency using LRM feedback.
+
+- **DriveVLA-W0**: DRIVEVLA-W0: World Models Amplify Data Scaling Law in Autonomous Driving [[Paper](https://arxiv.org/pdf/2510.12796)] [[Code](https://github.com/BraveGroup/DriveVLA-W0)]
+  
+  Summary: DriveVLA-W0 is a training paradigm for VLA models that augments sparse action supervision with dense world modeling signals by predicting future images. It instantiates both an autoregressive world model for discrete visual tokens and a diffusion world model for continuous visual features, and then adds a lightweight action expert on top of the learned representations to realize low-latency control for real-time deployment.
+
+
+- **MTRDrive**: MTRDrive: Memory-Tool Synergistic Reasoning for Robust Autonomous Driving in Corner Cases [[Paper](https://arxiv.org/pdf/2509.20843)]
+  
+  Summary: MTRDrive builds a VLM-based end-to-end driving framework that augments vision-language reasoning with external memory and tools. It retrieves procedural driving experiences via a memory module, dynamically invokes toolkits in a closed-loop system, and combines these through memory–tool synergistic reasoning to improve robustness and generalization, especially in out-of-distribution and roadwork scenarios.
+
+- **ReflectDrive**: Discrete Diffusion for Reflective Vision-Language-Action Models in Autonomous Driving [[Paper](https://arxiv.org/pdf/2509.20109)]
+  
+  Summary: ReflectDrive integrates a discrete diffusion-based reflection mechanism into VLA models for safe trajectory generation. It discretizes the driving space into an action codebook to adapt pre-trained diffusion language models for planning, generates goal-conditioned trajectories, and iteratively performs safety-aware reflection by detecting unsafe tokens and inpainting around safe anchors, enabling self-correction without gradient-based guidance.
+
+
+- **IRL-VLA**: IRL-VLA: Training an Vision-Language-Action Policy via Reward World Model for End-to-End Autonomous Driving [[Paper](https://arxiv.org/pdf/2508.06571)] [[Code](http://github.com/IRL-VLA/IRL-VLA)]
+  
+  Summary: IRL-VLA is a closed-loop VLA framework trained via a reward world model built with inverse reinforcement learning. It first pretrains a VLA driving policy via imitation learning, then constructs a lightweight reward world model to provide efficient reward signals in closed-loop, and finally optimizes the VLA policy with PPO guided by this model to balance safety incidents, driving comfort, and traffic efficiency.
+
+- **Prune2Drive**: Prune2Drive: A Plug-and-Play Framework for Accelerating Vision-Language Models in Autonomous Driving [[Paper](https://arxiv.org/pdf/2508.13305)]
+  
+  Summary: Prune2Drive accelerates multi-view VLMs for autonomous driving via plug-and-play visual token pruning that neither requires retraining nor attention maps. It uses a diversity-aware token selection mechanism inspired by farthest point sampling to retain tokens with broad semantic and spatial coverage, and a view-adaptive controller that learns distinct pruning ratios per camera view, greatly reducing compute while preserving vision-language reasoning for driving tasks.
+
+- **FastDriveVLA**: FastDriveVLA: Efficient End-to-End Driving via Plug-and-Play Reconstruction-based Token Pruning [[Paper](https://arxiv.org/pdf/2507.23318)]
+  
+  Summary: This work proposes FastDriveVLA, a reconstruction-based visual token pruning framework for VLA models in autonomous driving. A plug-and-play module, ReconPruner, is trained with MAE-style pixel reconstruction and an adversarial foreground–background reconstruction strategy on the nuScenes-FG dataset, so that it can be attached to different VLA models to keep foreground-critical tokens and prune redundant ones, cutting computation while maintaining effective driving decisions.
 
 - **MCAM**​: Multimodal Causal Analysis Model for Ego-Vehicle-Level Driving Video Understanding [[paper](https://arxiv.org/pdf/2507.06072)] [[code](https://github.com/SixCorePeach/MCAM)]
 
@@ -827,7 +921,12 @@ This repo. collects and organizes key papers in general end-to-end autonomous dr
 <details open>
 <summary>2025</summary>
 
-- **ReAL-AD:**Towards Human-Like Reasoning in End-to-End Autonomous Driving [[paper](https://arxiv.org/pdf/2507.12499)][[project](https://4dvlab.github.io/project_page/realad)]
+- **AdaDrive**: AdaDrive: Self-Adaptive Slow-Fast System for Language-Grounded Autonomous Driving, **ICCV 2025** [[Paper](https://arxiv.org/pdf/2511.06253)] [[Code](https://github.com/ReaFly/AdaDrive)]
+  
+  Summary: AdaDrive builds a self-adaptive slow–fast framework that decides when and how to invoke an LLM to assist a conventional planner in language-grounded driving. It introduces an adaptive activation loss that learns to trigger the LLM only in complex or critical scenarios, and an adaptive fusion strategy that continuously scales the LLM’s influence based on scene complexity and prediction confidence, balancing high-level reasoning with real-time efficiency.
+
+
+- **ReAL-AD**: Towards Human-Like Reasoning in End-to-End Autonomous Driving [[paper](https://arxiv.org/pdf/2507.12499)][[project](https://4dvlab.github.io/project_page/realad)]
 
 
     Summary: ReAL-AD introduces a human-like hierarchical reasoning mechanism and innovatively integrates the vision-language model organically into the decision-making hierarchy, significantly improving the planning accuracy and safety of the end-to-end autonomous driving system.
