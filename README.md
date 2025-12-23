@@ -11,10 +11,34 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-This is the official repository for the paper **"Survey of General End-to-End Autonomous Driving: A Unified Perspective"** ([paper link](https://doi.org/10.36227/techrxiv.176523315.56439138/v1)).  
+This is the official repository for the paper **"Survey of General End-to-End Autonomous Driving: A Unified Perspective"** ([📄 paper link](https://doi.org/10.36227/techrxiv.176523315.56439138/v1)).  
 It collects and organizes key papers in General End-to-End Autonomous Driving, classifying them into **Conventional** (e.g., UniAD), **VLM-centric** (e.g., DriveLM), and **Hybrid** (e.g., Senna) approaches.  
 In addition, this repository curates both **Normal** and **Vision-Language** datasets relevant to General End-to-End Autonomous Driving.  
 Based on this taxonomy and dataset collection, our analysis further outlines the main research branches and emerging trends that are shaping the field.
+
+<div align="center">
+  <a href="https://github.com/AutoLab-SAI-SJTU/GE2EAD">
+    <img 
+      src="images/methods.png" 
+      style="width: 100%; height: auto; max-width: 1500px;" 
+    >
+  </a>
+  <h3 align="center"></h3>
+</div>
+
+## Citation
+If you find this project useful in your research, please consider citing:
+```BibTeX
+@article{yang2025survey,
+  title={Survey of General End-to-End Autonomous Driving: A Unified Perspective},
+  author={Yang, Yixiang and Han, Chuanrong and Mao, Runhao and others},
+  journal={TechRxiv},
+  year={2025},
+  month={December},
+  doi={10.36227/techrxiv.176523315.56439138/v1},
+  url={https://doi.org/10.36227/techrxiv.176523315.56439138/v1}
+}
+```
 
 ## 📌 Milestones
 
@@ -71,6 +95,13 @@ Based on this taxonomy and dataset collection, our analysis further outlines the
 
 <details open>
 <summary>2025</summary>
+
+<!-- | 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
+|---|---|---|---|---|---|
+| **DiffusionDriveV2**<br><sub>DiffusionDriveV2: Reinforcement Learning-Constrained Truncated Diffusion Modeling in End-to-End Autonomous Driving</sub> | 2025 | `Diffusion` · `RL` | [![arXiv](https://img.shields.io/badge/arXiv-2512.07745-b31b1b?style=flat-square)](https://arxiv.org/abs/2512.07745) | [![Stars](https://img.shields.io/github/stars/hustvl/DiffusionDriveV2?style=social)](https://github.com/hustvl/DiffusionDriveV2) | — | -->
+
+
+
 
 - **DiffusionDriveV2**: DiffusionDriveV2: Reinforcement Learning-Constrained Truncated Diffusion Modeling in End-to-End Autonomous Driving [[Paper](https://www.arxiv.org/pdf/2512.07745)] [[Code](https://github.com/hustvl/DiffusionDriveV2)]
   
@@ -1284,21 +1315,6 @@ The GE2EAD resources is released under the Apache 2.0 license.
 <p align="right">(<a href="#top">back to top</a>)</p>    
 
 
-## Citation
-If you find this project useful in your research, please consider citing:
-```BibTeX
-@article{yang2025survey,
-  title={Survey of General End-to-End Autonomous Driving: A Unified Perspective},
-  author={Yang, Yixiang and Han, Chuanrong and Mao, Runhao and others},
-  journal={TechRxiv},
-  year={2025},
-  month={December},
-  doi={10.36227/techrxiv.176523315.56439138/v1},
-  url={https://doi.org/10.36227/techrxiv.176523315.56439138/v1}
-}
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>    
 
 <!-- links -->
 [your-project-path]:AutoLab-SAI-SJTU/GE2EAD
